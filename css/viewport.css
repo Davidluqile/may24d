@@ -1,0 +1,364 @@
+html{ 
+    background-color: #ff69b4;
+}
+
+body {
+    font-family: Tahoma, sans-serif;
+    font-size: 90%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Banner Overlay */
+.image-banner {
+    position: relative;
+    top: 15px;
+    left: 15px;
+    z-index: 10;
+}
+
+.image-banner img {
+    display: block;
+}
+
+.banner-caption {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(0,0,0,0,5);
+    padding: 20px 30px;
+}
+
+.banner-caption p {
+    color: royalblue;
+}
+/* End Banner Overlay */
+
+.container {
+    max-width: 950px;
+    margin-left: auto;
+    margin-right: auto;
+    background: url(../images/CM.jpg) left bottom repeat-x, #fffafa url(../images/CM.jpg) left top repeat-x;
+    padding-top: 16px;
+    padding-left: 40px;
+    padding-right: 40px;
+    box-sizing: border-box;
+}
+
+/*Media Query*/
+@media screen and (max-width:480px) {
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+/*Media Query*/
+
+.box1 {
+    background-image: url(../images/Fu\ Xuan.jpg) no-repeat right center;
+    background-size: cover;
+}
+
+/* Form Styles */
+form {
+    background-color: #fffafa;
+    padding: 30px 40px;
+}
+
+.hidden-label {
+    position: absolute;
+    height: 0;
+    width: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+input[type="Email"], input[type="Password"], select {
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    padding: 0 10px;
+    height: 40px;
+    font-family: Tahoma, sans-serif;
+    font-size: 100%;
+    margin-bottom: 20px;
+    border: 1px solid #e0ffff;
+}
+
+input, select {
+    font-family: Tahoma sans-serif;
+    font-size: 100%;
+}
+
+input[type="Email"]:focus, input[type="Password"]:focus {
+    border: 1px #90ee90;
+}
+
+input[type="submit"] {
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    background-color: #90ee90;
+    color: #e6e6fa;
+    padding: 10px 0;
+    border: 1px solid #7cfc00;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+    border: 3px solid #f5f5f5;
+    background-color: #7cfc00;
+}
+/* End form styles */
+
+/* Table Styles */
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table th {
+    text-align: left;
+    background-color: #663399;
+    color: #ffff00;
+    text-shadow: 1px 1px 0 rgba(0,0,0,0,4);
+}
+
+table th, table td {
+    border: 1px solid #ff69b4;
+    padding: 10px;
+}
+
+table tbody tr:nth-child(even) td {
+    background-color: #87cefa;
+}
+
+table th:nth-child(2), table th:nth-child(3),
+table td:nth-child(2), table td:nth-child(3) {
+    text-align: right;
+}
+
+.col-Fave {
+    width: 60%;
+}
+
+.col-Q {
+    width: 20%;
+}
+
+.col-P {
+    width: 20%;
+}
+/* End Table Styles */
+
+header {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    color:#fffafa;
+}
+
+/* Typography */
+header h1 {
+    margin: 0;
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 170%;
+    font-style: normal;
+    letter-spacing: 4px;
+    text-shadow: 2px 10px 1px #999
+}
+
+header p {
+    font-size: 100%;
+    margin-top: 10px;
+    text-align: justify;
+    color: hotpink;
+}
+
+header p a {
+    text-decoration: none;
+}
+
+.p1 p {
+    margin-top: 10px;
+    text-indent: 25px;
+    color: royalblue;
+}
+/* End of Typography */
+
+.content-area {
+    border-top: 4px solid #d8bfd8;
+    border-bottom: 4px solid #d8bfd8;
+}
+
+/*Media Query*/
+@media screen and (max-width: 480px) {
+    .content-area {
+        padding-top: 20px;
+    }
+}
+/*Media Query*/
+
+.main {
+    width: 60%;
+    float: left;
+    padding-right: 40px;
+    box-sizing: border-box;
+}
+
+/* Disappearing info-box */
+.info-box {
+    background-color: #efeedb;
+    border: 5px solid #fffafa;
+    padding: 20px 40px 7px 40px;
+    margin-bottom: 1em;
+}
+
+@media screen and (max-width:480px) {
+    .hide-small {
+        display: none;
+    }
+}
+
+/* End of disappearing info-box */
+
+.support {
+    position: relative;
+    width:40%;
+    float: left;
+    background-color: #8da7b2;
+    background-image: linear-gradient(to bottom, #8da7b2 #fff);
+    padding-left: 40px;
+    padding-right: 40px;
+    box-sizing: border-box;
+    font-size: 86%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    z-index: 9;
+}
+
+.fix {
+    clear: both;
+}
+
+/*Media Query*/
+@media screen and (max-width: 700px) {
+    .main,
+    .support {
+        width: auto;
+        float: none;
+    }
+
+    .main {
+        padding-right: 0,
+    }
+}
+/*Media Query*/
+
+p {
+    color: royalblue;
+}
+
+footer p {
+    color: yellow;
+    text-align: center;
+    font-size: 86%;
+    color: #cd853f;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+h1 {
+    color: blue;
+    text-align: center;
+    font-size: 170px;
+    font-weight: normal;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+header p {
+    color: green;
+}
+
+aside {
+    color: #008080;
+}
+
+header p span {
+    color: azure;
+}
+
+.highlight {
+    color: green;
+    background-color: royalblue;
+}
+
+.brand-color {
+    color: plum;
+    background-color: oldlace;
+}
+
+/* Site Navigation */
+.site-nav li {
+    list-style: none;
+    float: left;
+    margin-right: 10px;
+}
+
+.site-nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+.site-nav {
+    margin-top: 30px;
+}
+
+.site-nav a {
+    text-decoration: none;
+    color: #7fff00;
+    padding: 10px 20px;
+    border :3px solid #cd853f;
+    display: block;
+}
+
+.site-nav a:hover {
+    background-color: #dda0dd;
+}
+/* End of Site Navigation*/
+
+@media screen and (max-width: 700px) {
+    .site-nav li {
+        width: 50%;
+        margin-right: 0;
+    }
+
+    .site-nav a {
+        padding: 20px 0;
+        margin-right: 5px;
+        margin-bottom: 5px;
+        text-align: center;
+        border: 3px solid #e5e9dc;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .site-nav li{
+        width: 70%;
+        margin-right: 0;
+    }
+    .site-nav a {
+        padding: 20px 0;
+        margin-right: 5px;
+        margin-bottom: 5px;
+        text-align: center;
+        border: 3px solid #e5e9dc;
+    }
+}

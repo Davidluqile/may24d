@@ -1,0 +1,167 @@
+html{ 
+    background-color: #ff69b4;
+}
+
+body {
+    font-family: Tahoma, sans-serif;
+    font-size: 90%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Banner Overlay */
+.image-banner {
+    position: relative;
+    top: 15px;
+    left: 15px;
+    z-index: 10;
+}
+
+.image-banner img {
+    display: block;
+}
+
+.banner-caption {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(0,0,0,0,5);
+    padding: 20px 30px;
+}
+
+.banner-caption p {
+    color: royalblue;
+}
+/* End Banner Overlay */
+
+.container {
+    max-width: 950px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fffafa;
+    padding-left: 40px;
+    padding-right: 40px;
+    box-sizing: border-box;
+}
+
+header {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    color:#fffafa;
+}
+
+header h1 {
+    margin: 0;
+    font-weight: normal;
+    font-size: 170%;
+}
+
+header p {
+    margin: 0;
+}
+
+.content-area {
+    border-top: 4px solid #d8bfd8;
+    border-bottom: 4px solid #d8bfd8;
+}
+
+.main {
+    width: 50%;
+    float: left;
+    padding-right: 40px;
+    box-sizing: border-box;
+}
+
+.support {
+    position: relative;
+    width: 50%;
+    float: left;
+    background-color: #0ff;
+    padding-left: 40px;
+    padding-right: 40px;
+    box-sizing: border-box;
+    font-size: 86%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    z-index: 9;
+}
+
+.fix {
+    clear: both;
+}
+
+p {
+    color: burlywood;
+}
+
+footer p {
+    color: yellow;
+    text-align: center;
+    font-size: 86%;
+    color: #cd853f;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+h1 {
+    color: blue;
+    text-align: center;
+    font-size: 170px;
+    font-weight: normal;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+header p {
+    color: green;
+}
+
+aside {
+    color: #008080;
+}
+
+header p span {
+    color: azure;
+}
+
+.highlight {
+    color: green;
+    background-color: royalblue;
+}
+
+.brand-color {
+    color: plum;
+    background-color: oldlace;
+}
+
+/* Site Navigation */
+.site-nav li {
+    list-style: none;
+    float: left;
+    margin-right: 10px;
+}
+
+.site-nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+.site-nav {
+    margin-top: 30px;
+}
+
+.site-nav a {
+    text-decoration: none;
+    color: #7fff00;
+    padding: 10px 20px;
+    border :3px solid #cd853f;
+    display: block;
+}
+
+.site-nav a:hover {
+    background-color: #dda0dd;
+}
+/* End of Site Navigation*/
